@@ -3,8 +3,8 @@ body {
 }
 
 .parent {
-    height: 150px;
-    width: 150px;
+    height: 300px;
+    width: 300px;
     margin: 2rem auto;
     border: 5px solid #ffffff;
     border-radius: 1rem;
@@ -17,6 +17,7 @@ body {
     justify-content: center;
     gap: 5%;
     align-content : center;
+    align-items: center;
 }
 
 .item{
@@ -24,9 +25,11 @@ body {
     text-align: center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border-radius: 0.4rem;
+    background: #b4b06e;
+    border: 1px solid #e2d714;
 
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     /* flex: 1 1 0; */
 }
 
@@ -36,12 +39,19 @@ body {
     /* flex: 2; */
 }
 
-.item:nth-child(2) {
+.item:nth-child(2),
+.item:nth-child(5) {
+    height: 25px;
     background: #9b4646;
     border: 1px solid rgb(244, 52, 52);
+    align-self: flex-start;
 }
 
-.item:last-child {
+.item:last-child,
+.item:nth-child(4) {
+    height: 34px;
     background: #3e6f7d;
     border: 1px solid rgb(44, 124, 180);
+    
+    align-self: flex-end;
 }
