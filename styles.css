@@ -1,11 +1,30 @@
 body {
-
+    background: #121212;
 }
 
-section {
-
+.parent {
+    height: 250px;
+    width: 250px;
+    margin: 8rem auto;
+    border: 5px solid #ffffff;
+    display: flex;
 }
 
-.container{
+.item{
+    height: 50px;
+    width: 50px ;
+    background: #9b4646;
+    border: 1px solid rgb(244, 52, 52);
+    text-align: center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
 
+.item:first-child{
+    background: #4a6758;
+    border: 1px solid #48aa77;
+}
+
+.item:last-child{
+    background: #3e6f7d;
+    border: 1px solid rgb(44, 124, 180);
 }
